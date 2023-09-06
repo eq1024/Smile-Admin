@@ -1,0 +1,73 @@
+@import './_variables.less';
+@import './_animation.less';
+@import './_antd.less';
+@import './_transition.less';
+
+
+
+@font-face {
+    font-family: Harmony;
+    src: url('@/assets/harmony.woff2');
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Harmony !important;
+    letter-spacing: .5px;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--theme-color);
+}
+
+.block {
+    background-color: var(--white);
+    border-radius: 0.7rem;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    border: 1px solid #e9e9e9;
+}
+
+@media screen and (min-width: 2201px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 2200px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    html {
+        font-size: 14px;
+    }
+}

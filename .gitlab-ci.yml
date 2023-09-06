@@ -1,0 +1,40 @@
+stages:
+  - build
+  - deploy
+
+cache:
+  key: ${CI_COMMIT_REF_NAME}
+  paths:
+  - node_modules/
+
+build:
+  image: node:lts-alpine3.18
+  stage: build
+  only:
+    - main
+  script:
+    - node -v
+    - npm config set registry https://registry.npmmirror.com/ 
+    - npm install yarn -g --force
+    - yarn config set registry https://registry.npmmirror.com/ 
+    - yarn
+    - yarn build
+  artifacts:  
+    expire_in: 1 week
+    paths:
+      - dist
+
+deploy:
+  image: alpine:3.15
+  stage: deploy
+  only:
+    - main
+  script:
+    - echo "http://mirrors.aliyun.com/alpine/v3.5/main/" > /etc/apk/repositories
+    - apk add --no-cache rsync openssh
+    - mkdir -p ~/.ssh
+    - echo "${private}" >> ~/.ssh/id_dsa
+    - chmod 600 ~/.ssh/id_dsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - rsync -rav --delete dist/ "root@128.45.2.33:/opt/iot_web"
+    
