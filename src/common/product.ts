@@ -10,6 +10,10 @@ export function GetProductList(params: GetProductListP) {
   })
 }
 
+export function DeleteProduct(data: { id: number }) {
+  return request.post('/v1/product/delete', data)
+}
+
 export function UpdateProMetadata(data: {
   product_id: number
   metadata: string

@@ -22,6 +22,22 @@ mock('/request/v1/product/update/state', 'post', () => {
   }
 })
 
+mock('/request/v1/gateway/delete', 'post', () => {
+  return {
+    code: 400,
+    msg: 'Mock模式下不允许操作',
+    data: {},
+  }
+})
+
+mock('/request/v1/product/delete', 'post', () => {
+  return {
+    code: 400,
+    msg: 'Mock模式下不允许操作',
+    data: {},
+  }
+})
+
 mock('/request/v1/gateway/update/state', 'post', () => {
   return {
     code: 400,

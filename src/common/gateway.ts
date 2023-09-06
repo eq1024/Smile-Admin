@@ -12,6 +12,10 @@ export function bindDevice(data: { dev_id: number; gateway_id: number }) {
   return request.post('/v1/gateway/device/bind', data)
 }
 
+export function DeleteGateway(data: { id: number }) {
+  return request.post('/v1/gateway/delete', data)
+}
+
 export function unbindDevice(data: { dev_id: number; gateway_id: number }) {
   return request.post('/v1/gateway/device/unbind', data)
 }
