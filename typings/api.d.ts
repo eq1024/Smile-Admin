@@ -146,5 +146,21 @@ declare interface GetGatewayP {
   state?: number;
 }
 
+declare interface GatewayBR {
+  list: {
+    created_at: number;
+    description: string;
+    dev_id: number;
+    dev_name: string;
+    dev_state: number;
+    dev_state_time: number;
+    product_name: string;
+    state: number;
+    unique_number: string;
+    updated_at: number;
+  }[];
+  total: number;
+}
+
 
 

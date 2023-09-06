@@ -8,8 +8,12 @@ declare global {
   const AddProduct: typeof import('./src/common/product')['AddProduct']
   const ComfirmGateway: typeof import('./src/common/gateway')['ComfirmGateway']
   const DebugGateway: typeof import('./src/common/gateway')['DebugGateway']
+  const DeleteGateway: typeof import('./src/common/gateway')['DeleteGateway']
+  const DeleteProduct: typeof import('./src/common/product')['DeleteProduct']
   const EffectScope: typeof import('vue')['EffectScope']
   const GetGatewayDetail: typeof import('./src/common/gateway')['GetGatewayDetail']
+  const GetGatewayDetailDeviceLinkedList: typeof import('./src/common/gateway')['GetGatewayDetailDeviceLinkedList']
+  const GetGatewayDetailDeviceUnlinkList: typeof import('./src/common/gateway')['GetGatewayDetailDeviceUnlinkList']
   const GetGatewayList: typeof import('./src/common/gateway')['GetGatewayList']
   const GetMain: typeof import('./src/common/product')['GetMain']
   const GetProductDetail: typeof import('./src/common/product')['GetProductDetail']
@@ -122,8 +126,12 @@ declare module 'vue' {
     readonly AddProduct: UnwrapRef<typeof import('./src/common/product')['AddProduct']>
     readonly ComfirmGateway: UnwrapRef<typeof import('./src/common/gateway')['ComfirmGateway']>
     readonly DebugGateway: UnwrapRef<typeof import('./src/common/gateway')['DebugGateway']>
+    readonly DeleteGateway: UnwrapRef<typeof import('./src/common/gateway')['DeleteGateway']>
+    readonly DeleteProduct: UnwrapRef<typeof import('./src/common/product')['DeleteProduct']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly GetGatewayDetail: UnwrapRef<typeof import('./src/common/gateway')['GetGatewayDetail']>
+    readonly GetGatewayDetailDeviceLinkedList: UnwrapRef<typeof import('./src/common/gateway')['GetGatewayDetailDeviceLinkedList']>
+    readonly GetGatewayDetailDeviceUnlinkList: UnwrapRef<typeof import('./src/common/gateway')['GetGatewayDetailDeviceUnlinkList']>
     readonly GetGatewayList: UnwrapRef<typeof import('./src/common/gateway')['GetGatewayList']>
     readonly GetMain: UnwrapRef<typeof import('./src/common/product')['GetMain']>
     readonly GetProductDetail: UnwrapRef<typeof import('./src/common/product')['GetProductDetail']>
@@ -230,8 +238,12 @@ declare module '@vue/runtime-core' {
     readonly AddProduct: UnwrapRef<typeof import('./src/common/product')['AddProduct']>
     readonly ComfirmGateway: UnwrapRef<typeof import('./src/common/gateway')['ComfirmGateway']>
     readonly DebugGateway: UnwrapRef<typeof import('./src/common/gateway')['DebugGateway']>
+    readonly DeleteGateway: UnwrapRef<typeof import('./src/common/gateway')['DeleteGateway']>
+    readonly DeleteProduct: UnwrapRef<typeof import('./src/common/product')['DeleteProduct']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly GetGatewayDetail: UnwrapRef<typeof import('./src/common/gateway')['GetGatewayDetail']>
+    readonly GetGatewayDetailDeviceLinkedList: UnwrapRef<typeof import('./src/common/gateway')['GetGatewayDetailDeviceLinkedList']>
+    readonly GetGatewayDetailDeviceUnlinkList: UnwrapRef<typeof import('./src/common/gateway')['GetGatewayDetailDeviceUnlinkList']>
     readonly GetGatewayList: UnwrapRef<typeof import('./src/common/gateway')['GetGatewayList']>
     readonly GetMain: UnwrapRef<typeof import('./src/common/product')['GetMain']>
     readonly GetProductDetail: UnwrapRef<typeof import('./src/common/product')['GetProductDetail']>

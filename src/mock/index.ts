@@ -1,5 +1,30 @@
 import { mock } from 'mockjs'
 
+mock('/request/v1/public/ent/list', 'get', () => {
+  return {
+    code: 200,
+    msg: 'Success',
+    detail: 'success',
+    data: {
+      list: [
+        {
+          created_at: 0,
+          ent_name: '公司A',
+          id: '1555103981598937090',
+          updated_at: 0,
+        },
+        {
+          created_at: 0,
+          ent_name: '公司B',
+          id: '1557661588633161730',
+          updated_at: 0,
+        },
+      ],
+      total: 5,
+    },
+  }
+})
+
 mock('/request/v1/public/login', 'post', () => {
   return {
     code: 200,

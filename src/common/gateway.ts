@@ -52,3 +52,24 @@ export function ComfirmGateway(data: {
 }) {
   return request.post('/v1/gateway/confirm', data)
 }
+
+export function GetGatewayDetailDeviceLinkedList(params: {
+  dev_name?: string
+  gateway_id: number
+  page_index?: number
+  page_size?: number
+}) {
+  return request.get<GatewayBR>('/v1/gateway/list/bind/device', {
+    params,
+  })
+}
+export function GetGatewayDetailDeviceUnlinkList(params: {
+  dev_name?: string
+  gateway_id: number
+  page_index?: number
+  page_size?: number
+}) {
+  return request.get<GatewayBR>('/v1/gateway/list/unbind/device', {
+    params,
+  })
+}
