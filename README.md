@@ -20,7 +20,7 @@ npm install yarn -g
 
 第一步:克隆本项目
 ```shell
-git clone https://github.com/eq1024/vue3-template
+git clone https://github.com/eq1024/Smile-Admin
 ```
 第二步:进入并构建依赖
 ```shell
