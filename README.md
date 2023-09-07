@@ -1,10 +1,13 @@
 ## Smile Admin
->基于Vue3、Vite4、ant-design-vue4、Pinia和Typescript的一整套企业级中后台前端解决方案
+>基于Vue3、Vite4、Ant-design-vue4、Pinia和Typescript的一整套企业级中后台前端解决方案
 
 #### 预览: 
 
 https://vue3-template-d4r0h2c17-eq1024.vercel.app/
 
+![](https://pic-1300230199.cos.ap-guangzhou.myqcloud.com/NewPic/122.png)
+
+![](https://pic-1300230199.cos.ap-guangzhou.myqcloud.com/NewPic/333.png)
 
 #### 项目目录结构
 
